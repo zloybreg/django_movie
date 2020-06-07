@@ -9,7 +9,6 @@ class MoviesView(ListView):
     """Спиок фильмов"""
     model = Movie
     queryset = Movie.objects.filter(draft=False)
-    template_name = "movies/movies.html"
 
 
 class MovieDetailView(DetailView):
